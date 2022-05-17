@@ -1,0 +1,6 @@
+2022-05-17 18:13:05 [main] INFO  c.s.s.t.t.k.service.ApplicationKt - Starting ApplicationKt using Java 1.8.0_312 on P74594 with PID 8269 (/Users/ts-yencheng.liu/self-study/spring-study/project-1/twitter-to-kafka-service/build/classes/kotlin/main started by ts-yencheng.liu in /Users/ts-yencheng.liu/self-study/spring-study/project-1)
+2022-05-17 18:13:05 [main] INFO  c.s.s.t.t.k.service.ApplicationKt - No active profile set, falling back to 1 default profile: "default"
+2022-05-17 18:13:05 [main] INFO  c.s.s.t.t.k.service.ApplicationKt - Started ApplicationKt in 0.597 seconds (JVM running for 1.251)
+2022-05-17 18:13:16 [main] INFO  c.s.s.t.t.k.service.ApplicationKt - Starting ApplicationKt using Java 1.8.0_312 on P74594 with PID 8280 (/Users/ts-yencheng.liu/self-study/spring-study/project-1/twitter-to-kafka-service/build/classes/kotlin/main started by ts-yencheng.liu in /Users/ts-yencheng.liu/self-study/spring-study/project-1)
+2022-05-17 18:13:16 [main] INFO  c.s.s.t.t.k.service.ApplicationKt - No active profile set, falling back to 1 default profile: "default"
+2022-05-17 18:13:16 [main] INFO  c.s.s.t.t.k.service.ApplicationKt - Started ApplicationKt in 0.626 seconds (JVM running for 1.131)
