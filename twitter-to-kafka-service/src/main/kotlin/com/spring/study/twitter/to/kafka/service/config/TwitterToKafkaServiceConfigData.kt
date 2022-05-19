@@ -6,8 +6,6 @@ import org.springframework.context.annotation.Configuration
 @Configuration
 @ConfigurationProperties("twitter-to-kafka-service")
 class TwitterToKafkaServiceConfigData {
-    val twitterKeyWords: List<String>
-        get() {
-            TODO()
-        }
+    lateinit var twitterKeyWords: List<String>
+    lateinit var welcomeMessage: String
 }

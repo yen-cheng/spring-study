@@ -22,7 +22,6 @@ class TwitterKafkaStreamRunner(
         twitterStream = TwitterStreamFactory.getSingleton()
         twitterStream.addListener(twitterKafkaStatusListener)
         addFilter()
-
     }
 
     @PreDestroy
@@ -34,6 +33,7 @@ class TwitterKafkaStreamRunner(
     private fun addFilter(){
         val keywords = configData.twitterKeyWords
         val filterQuery = FilterQuery(*keywords.toTypedArray())
+        twitterStream.filter(filterQuery)
         logger.info("Started filter twitter keyword ${keywords.joinToString(",")}")
     }
 }
