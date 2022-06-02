@@ -4,21 +4,23 @@ import com.spring.study.twitter.to.kafka.service.config.TwitterToKafkaServiceCon
 import com.spring.study.twitter.to.kafka.service.listener.TwitterKafkaStatusListener
 import com.spring.study.twitter.to.kafka.service.runner.StreamRunner
 import org.slf4j.LoggerFactory
+import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty
 import org.springframework.stereotype.Component
 import twitter4j.FilterQuery
 import twitter4j.TwitterStream
 import twitter4j.TwitterStreamFactory
 import javax.annotation.PreDestroy
 
-@Component
+//@Component
+//@ConditionalOnProperty(name = ["twitter-to-kafka-service.enable-mock-tweets"], havingValue = "false", matchIfMissing = true)
 class TwitterKafkaStreamRunner(
     val configData: TwitterToKafkaServiceConfigData,
     val twitterKafkaStatusListener: TwitterKafkaStatusListener
-): StreamRunner {
+) {
     private val logger = LoggerFactory.getLogger(TwitterKafkaStreamRunner::class.java)
 
     private lateinit var  twitterStream: TwitterStream
-    override fun start() {
+    fun start() {
         twitterStream = TwitterStreamFactory.getSingleton()
         twitterStream.addListener(twitterKafkaStatusListener)
         addFilter()

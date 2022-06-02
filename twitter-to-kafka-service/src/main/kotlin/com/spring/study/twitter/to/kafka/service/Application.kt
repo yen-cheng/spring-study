@@ -4,6 +4,7 @@ import com.spring.study.twitter.to.kafka.service.config.TwitterToKafkaServiceCon
 import com.spring.study.twitter.to.kafka.service.runner.StreamRunner
 import org.slf4j.LoggerFactory
 import org.springframework.beans.factory.annotation.Autowired
+import org.springframework.beans.factory.annotation.Qualifier
 import org.springframework.boot.CommandLineRunner
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
@@ -15,6 +16,7 @@ class Application: CommandLineRunner {
     @Autowired
     private lateinit var twitterToKafkaServiceConfigData: TwitterToKafkaServiceConfigData
 
+    //@Qualifier("mockKafkaStreamRunner")
     @Autowired
     private lateinit var streamRunner: StreamRunner
 
